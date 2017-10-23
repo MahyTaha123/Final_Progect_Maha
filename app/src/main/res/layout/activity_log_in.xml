@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+
+    tools:context="com.example.maha.final_progect_maha.LogIn">
+
+    <TextView
+        android:id="@+id/nearByPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="63dp"
+        android:text="Nearby Places"
+        android:textColor="#028AC6"
+        android:textSize="32sp"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+
+    <EditText
+        android:id="@+id/userNameLog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="117dp"
+        android:ems="10"
+        android:hint="USERNAME:Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearByPlaces"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    >
+
+    <EditText
+        android:id="@+id/passwordLog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="PASSWORD"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/userNameLog"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/signInLog"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:text="Sign In"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLog"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteX="52dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DON'T HAVE AN ACCOUNT?"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="39dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/signUpLog" />
+
+    <Button
+        android:id="@+id/signUpLog"
+        android:layout_width="84dp"
+        android:layout_height="35dp"
+        android:text="SIGN Up"
+        android:textColor="#000"
+        android:background="#fff3f3f3"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/signInLog"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+
+
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
