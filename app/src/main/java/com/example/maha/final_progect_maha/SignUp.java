@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -177,6 +178,12 @@ public class SignUp extends AppCompatActivity {
                 cursor.close();
 
                 CircleImageView.setImageBitmap(BitmapFactory.decodeFile(imagePath));
+
+///////////////SAVE IMAGE PATH///
+                SharedPreferences shre = PreferenceManager.getDefaultSharedPreferences(this);
+                SharedPreferences.Editor edit=shre.edit();
+                edit.putString("imagepath",imagePath);
+                edit.commit();
 
             } else {
                 Toast.makeText(this, "You haven't picked Image",

@@ -15,7 +15,7 @@ import static com.example.maha.final_progect_maha.SignUp.SHARED_PREF_NAME;
 
 public class LogIn extends AppCompatActivity {
 
-    EditText userNameLog;
+    EditText userEmailLog;
     EditText passwordLog;
     Button signInLog;
     Button signUplog;
@@ -29,7 +29,7 @@ public class LogIn extends AppCompatActivity {
 // hid action  bar
         getSupportActionBar().hide();
         ////*********************************************////
-        userNameLog = (EditText) findViewById(R.id.userNameLog);
+        userEmailLog = (EditText) findViewById(R.id.userNameLog);
         passwordLog = (EditText) findViewById(R.id.passwordLog);
         signInLog = (Button) findViewById(R.id.signInLog);
 
@@ -39,13 +39,13 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String uName = userNameLog.getText().toString();
+                String uEmail = userEmailLog.getText().toString();
                 int uPassword = Integer.parseInt(passwordLog.getText().toString());
                 SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
                 String xyz = sharedPreferences.getString("CurrentU", "no user");
                 Gson gson = new Gson();
                 User finalUser = gson.fromJson(xyz,User.class);
-                if (uName.equals(finalUser.getName())&& uPassword==finalUser.getPassword() ) {
+                if (uEmail.equals(finalUser.getEmail())&& uPassword==finalUser.getPassword() ) {
 
                     Intent IntentForSearch = new Intent(LogIn.this, Search.class);
                     startActivity(IntentForSearch);
