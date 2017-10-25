@@ -27,7 +27,7 @@ public class LogIn extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
 // hid action  bar
-        getSupportActionBar().hide();
+      //  getSupportActionBar().hide();
         ////*********************************************////
         userEmailLog = (EditText) findViewById(R.id.userNameLog);
         passwordLog = (EditText) findViewById(R.id.passwordLog);
