@@ -20,50 +20,8 @@ public class Search extends AppCompatActivity {
 
 
 
-        toolbar.inflateMenu(R.menu.menu);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-
-                switch (item.getItemId()) {
-
-            case R.id.logOut:
-
-                Intent intentforlogin = new Intent(Search.this, LogIn.class);
-
-                break;
-                    case R.id.favorits:
-
-                        // code is here
-                 break;
-                }
-
-
-
-                    return true;
-            }
-
-        });
-
     }// main
 
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu, menu);
-//        return true;
-//    }
 
-
- //   @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        switch (item.getItemId()) {
-//
-//            case android.R.id.:
-//
-//            default:
-//                return true;
-//        }
-//    }
 
 }//class
